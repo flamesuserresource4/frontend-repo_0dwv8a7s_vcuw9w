@@ -4,13 +4,18 @@ import { Download, ExternalLink, Github, Linkedin, Instagram, Mail } from 'lucid
 export default function Hero() {
   return (
     <section id="home" className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+      {/* Full-width cosmic background */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-cyan-500/10 via-transparent to-transparent pointer-events-none" />
-        <Spline scene="https://prod.spline.design/4cHQr84zOGAHOehh/scene.splinecode" style={{ width: '100%', height: '100%' }} />
+        <Spline
+          scene="https://prod.spline.design/er66D6jbuo0hIjmn/scene.splinecode"
+          style={{ width: '100%', height: '100%' }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-black/60 pointer-events-none" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(59,130,246,0.08),_transparent_60%)] pointer-events-none" />
       </div>
 
-      <div className="relative z-10 max-w-7xl w-full px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center pt-24">
-        <div className="text-left">
+      <div className="relative z-10 max-w-7xl w-full px-4 sm:px-6 lg:px-8 grid gap-10 items-center pt-24">
+        <div className="text-left max-w-3xl">
           <span className="inline-flex items-center gap-2 text-cyan-300/90 text-sm tracking-widest uppercase">
             <span className="h-1 w-1 rounded-full bg-cyan-400 animate-pulse" />
             Future-focused Technologist
@@ -54,13 +59,6 @@ export default function Hero() {
               <Mail />
             </a>
           </div>
-        </div>
-
-        <div className="relative h-[400px] lg:h-[550px] rounded-2xl overflow-hidden border border-cyan-500/20 bg-gradient-to-b from-white/5 to-transparent">
-          <div className="absolute inset-0">
-            <Spline scene="https://prod.spline.design/4cHQr84zOGAHOehh/scene.splinecode" style={{ width: '100%', height: '100%' }} />
-          </div>
-          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />
         </div>
       </div>
     </section>

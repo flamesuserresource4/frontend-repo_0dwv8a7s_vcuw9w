@@ -24,9 +24,13 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all ${
-      scrolled ? 'backdrop-blur-md bg-black/50 border-b border-cyan-500/20' : 'bg-transparent'
-    }`}>
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all ${
+        scrolled
+          ? 'backdrop-blur-md bg-black/50 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.6)] ring-1 ring-white/5'
+          : 'bg-transparent'
+      }`}
+    >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
         <a href="#home" className="group inline-flex items-center gap-2">
           <div className="h-8 w-8 rounded-full bg-gradient-to-tr from-cyan-400 to-blue-500 shadow-[0_0_25px_rgba(34,211,238,0.6)]"></div>
@@ -56,7 +60,7 @@ export default function Navbar() {
       </nav>
 
       {open && (
-        <div className="md:hidden border-t border-white/5 bg-black/80 backdrop-blur-md">
+        <div className="md:hidden bg-black/80 backdrop-blur-md ring-1 ring-white/5">
           <div className="px-4 py-3 grid gap-2">
             {navItems.map((item) => (
               <a

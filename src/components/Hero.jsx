@@ -4,14 +4,16 @@ import { Download, ExternalLink, Github, Linkedin, Instagram, Mail } from 'lucid
 export default function Hero() {
   return (
     <section id="home" className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-      {/* Full-width cosmic background */}
+      {/* Full-width tech/cubes background */}
       <div className="absolute inset-0">
         <Spline
-          scene="https://prod.spline.design/er66D6jbuo0hIjmn/scene.splinecode"
+          scene="https://prod.spline.design/Gt5HUob8aGDxOUep/scene.splinecode"
           style={{ width: '100%', height: '100%' }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-black/60 pointer-events-none" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(59,130,246,0.08),_transparent_60%)] pointer-events-none" />
+        {/* Dark gradient for readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/70 pointer-events-none" />
+        {/* Subtle green tech glow accents */}
+        <div className="absolute inset-0 pointer-events-none [background:radial-gradient(600px_300px_at_20%_20%,rgba(74,222,128,0.08),transparent_60%),radial-gradient(500px_250px_at_80%_60%,rgba(34,197,94,0.06),transparent_60%)]" />
       </div>
 
       <div className="relative z-10 max-w-7xl w-full px-4 sm:px-6 lg:px-8 grid gap-10 items-center pt-24">

@@ -1,19 +1,12 @@
-import Spline from '@splinetool/react-spline';
 import { Download, ExternalLink, Github, Linkedin, Instagram, Mail } from 'lucide-react';
 
 export default function Hero() {
   return (
     <section id="home" className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-      {/* Full-width tech/cubes background */}
+      {/* Plain black gradient background with subtle cyan glows */}
       <div className="absolute inset-0">
-        <Spline
-          scene="https://prod.spline.design/Gt5HUob8aGDxOUep/scene.splinecode"
-          style={{ width: '100%', height: '100%' }}
-        />
-        {/* Dark gradient for readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/70 pointer-events-none" />
-        {/* Subtle cyan tech glow accents */}
-        <div className="absolute inset-0 pointer-events-none [background:radial-gradient(600px_300px_at_20%_20%,rgba(34,211,238,0.10),transparent_60%),radial-gradient(520px_280px_at_80%_60%,rgba(6,182,212,0.08),transparent_60%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-black to-black pointer-events-none" />
+        <div className="absolute inset-0 pointer-events-none [background:radial-gradient(700px_320px_at_15%_20%,rgba(34,211,238,0.10),transparent_60%),radial-gradient(600px_300px_at_85%_65%,rgba(6,182,212,0.08),transparent_60%),radial-gradient(900px_500px_at_50%_120%,rgba(59,130,246,0.06),transparent_70%)]" />
       </div>
 
       <div className="relative z-10 max-w-7xl w-full px-4 sm:px-6 lg:px-8 grid gap-10 items-center pt-24">

@@ -12,8 +12,8 @@ export default function Hero() {
         />
         {/* Dark gradient for readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/70 pointer-events-none" />
-        {/* Subtle green tech glow accents */}
-        <div className="absolute inset-0 pointer-events-none [background:radial-gradient(600px_300px_at_20%_20%,rgba(74,222,128,0.08),transparent_60%),radial-gradient(500px_250px_at_80%_60%,rgba(34,197,94,0.06),transparent_60%)]" />
+        {/* Subtle cyan tech glow accents */}
+        <div className="absolute inset-0 pointer-events-none [background:radial-gradient(600px_300px_at_20%_20%,rgba(34,211,238,0.10),transparent_60%),radial-gradient(520px_280px_at_80%_60%,rgba(6,182,212,0.08),transparent_60%)]" />
       </div>
 
       <div className="relative z-10 max-w-7xl w-full px-4 sm:px-6 lg:px-8 grid gap-10 items-center pt-24">
